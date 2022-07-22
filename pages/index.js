@@ -62,6 +62,26 @@ const Home = () => {
           />
         </CardGrid>
       </section>
+      <section className="flex flex-col gap-4">
+        <header className="flex flex-col gap-2">
+          <div className="relative">
+            <h1 className="text-2xl text-stone-100 font-semibold">Streams</h1>
+            <div className="absolute top-0 right-0 w-4  bg-blue-500 text-stone-100 font-semibold p-2 rounded-[50%] inline-flex justify-center items-center">
+              4
+            </div>
+          </div>
+          <h4 className="text-lg">
+            Streams are the conversations between me and my brain. It's like
+            we're text messaging each other.
+          </h4>
+        </header>
+        <CardGrid>
+          <Card title="Stream #1" description="Metadata" />
+          <Card title="Stream #2" description="Metadata" />
+          <Card title="Stream #3" description="Metadata" />
+          <Card title="Stream #4" description="Metadata" />
+        </CardGrid>
+      </section>
     </div>
   );
 };
