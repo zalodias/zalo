@@ -10,6 +10,10 @@ import {
   At,
 } from "phosphor-react";
 
+import Card from "../components/Card";
+import CardGrid from "../components/CardGrid";
+import IconSocial from "../components/IconSocial";
+
 const Home = () => {
   return (
     <div className="">
