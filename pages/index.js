@@ -9,14 +9,13 @@ import {
   DribbbleLogo,
   At,
 } from "phosphor-react";
-
 import Card from "../components/Card";
 import CardGrid from "../components/CardGrid";
 import IconSocial from "../components/IconSocial";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="flex flex-col gap-16">
       <Head>
         <title>Gonçalo Dias</title>
       </Head>
