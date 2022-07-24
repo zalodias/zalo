@@ -14,7 +14,7 @@ import Card from "../components/Card";
 import CardGrid from "../components/CardGrid";
 import IconSocial from "../components/IconSocial";
 
-const Home = () => {
+const Home = ({ streams }) => {
   return (
     <div className="flex flex-col gap-16">
       <Head>
@@ -70,7 +70,7 @@ const Home = () => {
         <header className="flex flex-col gap-2">
           <div className="flex items-start gap-2">
             <h1 className="text-2xl text-stone-100 font-semibold">Streams</h1>
-            <BadgeCounter number="2" />
+            <BadgeCounter number={streams.length} />
           </div>
           <h4 className="text-lg">
             Streams are the conversations between me and my brain. It's like
@@ -78,10 +78,9 @@ const Home = () => {
           </h4>
         </header>
         <CardGrid>
-          <Card title="Stream #1" description="Metadata" />
-          <Card title="Stream #2" description="Metadata" />
-          <Card title="Stream #3" description="Metadata" />
-          <Card title="Stream #4" description="Metadata" />
+          {streams.map((stream) => (
+            <Card title={stream.child_page.title} description="Metadata" />
+          ))}
         </CardGrid>
       </section>
       <section className="flex flex-col gap-4">
