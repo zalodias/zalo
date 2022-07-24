@@ -102,4 +102,16 @@ const Home = () => {
   );
 };
 
+export async function getStaticProps() {
+  const res = await fetch("http://localhost:3000/api/streams");
+  const data = await res.json();
+  const streams = data.response.results;
+
+  return {
+    props: {
+      streams,
+    },
+  };
+}
+
 export default Home;
