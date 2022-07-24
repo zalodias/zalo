@@ -9,6 +9,7 @@ import {
   DribbbleLogo,
   At,
 } from "phosphor-react";
+import BadgeCounter from "../components/BadgeCounter";
 import Card from "../components/Card";
 import CardGrid from "../components/CardGrid";
 import IconSocial from "../components/IconSocial";
@@ -67,11 +68,9 @@ const Home = () => {
       </section>
       <section className="flex flex-col gap-4">
         <header className="flex flex-col gap-2">
-          <div className="relative">
+          <div className="flex items-start gap-2">
             <h1 className="text-2xl text-stone-100 font-semibold">Streams</h1>
-            <div className="absolute top-0 right-0 w-4  bg-blue-500 text-stone-100 font-semibold p-2 rounded-[50%] inline-flex justify-center items-center">
-              4
-            </div>
+            <BadgeCounter number="2" />
           </div>
           <h4 className="text-lg">
             Streams are the conversations between me and my brain. It's like
