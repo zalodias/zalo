@@ -84,6 +84,7 @@ const Home = ({ streams }) => {
           {streams
             .map((stream) => (
               <Card
+                key={stream.id}
                 title={stream.child_page.title}
                 description={timeAgo(stream.created_time)}
               />
