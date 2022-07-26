@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import { timeAgo } from "../utils/timeAgo";
+
 import {
   TwitterLogo,
   GithubLogo,
@@ -9,6 +11,7 @@ import {
   DribbbleLogo,
   At,
 } from "phosphor-react";
+
 import BadgeCounter from "../components/BadgeCounter";
 import Card from "../components/Card";
 import CardGrid from "../components/CardGrid";
@@ -78,9 +81,14 @@ const Home = ({ streams }) => {
           </h4>
         </header>
         <CardGrid>
-          {streams.map((stream) => (
-            <Card title={stream.child_page.title} description="Metadata" />
-          ))}
+          {streams
+            .map((stream) => (
+              <Card
+                title={stream.child_page.title}
+                description={timeAgo(stream.created_time)}
+              />
+            ))
+            .reverse()}
         </CardGrid>
       </section>
       <section className="flex flex-col gap-4">
