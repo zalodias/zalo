@@ -92,20 +92,6 @@ const Home = ({ streams }) => {
             .reverse()}
         </CardGrid>
       </section>
-      <section className="flex flex-col gap-4">
-        <header className="flex flex-col gap-2">
-          <h1 className="text-2xl text-stone-100 font-semibold">Razors</h1>
-          <h4 className="text-lg">
-            Razors are the principles that guide my decision-making in life.
-          </h4>
-        </header>
-        <CardGrid>
-          <Card title="Razor #1" description="Metadata" />
-          <Card title="Razor #2" description="Metadata" />
-          <Card title="Razor #3" description="Metadata" />
-          <Card title="Razor #4" description="Metadata" />
-        </CardGrid>
-      </section>
     </div>
   );
 };
