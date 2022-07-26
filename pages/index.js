@@ -105,6 +105,7 @@ export async function getStaticProps() {
     props: {
       streams,
     },
+    revalidate: 60,
   };
 }
 
