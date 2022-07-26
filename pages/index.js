@@ -1,6 +1,8 @@
 import Head from "next/head";
-
+import { getBlocks } from "../lib/notion";
 import { timeAgo } from "../utils/timeAgo";
+
+export const blockId = process.env.NOTION_PAGE_ID;
 
 import {
   TwitterLogo,
@@ -97,9 +99,7 @@ const Home = ({ streams }) => {
 };
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/streams");
-  const data = await res.json();
-  const streams = data.response.results;
+  const streams = await getBlocks(blockId);
 
   return {
     props: {
