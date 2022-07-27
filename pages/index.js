@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { getDatabase } from "../lib/notion";
 import { timeAgo } from "../utils/timeAgo";
 
@@ -85,11 +86,15 @@ const Home = ({ streams }) => {
         <CardGrid>
           {streams
             .map((stream) => (
-              <Card
-                key={stream.id}
-                title={stream.child_page.title}
-                description={timeAgo(stream.created_time)}
-              />
+              <Link href={`/streams/${stream.id}`}>
+                <a>
+                  <Card
+                    key={stream.id}
+                    title={stream.properties.Name.title[0].text.content}
+                    description={timeAgo(stream.created_time)}
+                  />
+                </a>
+              </Link>
             ))
             .reverse()}
         </CardGrid>
