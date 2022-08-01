@@ -27,6 +27,9 @@ const renderBlock = (block) => {
 };
 
 export default function Stream({ page, blocks }) {
+  if (!page || !blocks) {
+    return <div />;
+  }
   return (
     <div className="flex flex-col gap-8">
       <Head>
