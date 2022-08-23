@@ -11,7 +11,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="bg-stone-900 text-stone-400 px-8 py-16 max-w-screen-lg mx-auto">
+      <body className="bg-stone-900 text-stone-400 px-8 py-16 max-w-screen-md mx-auto">
         <Main />
         <NextScript />
       </body>
