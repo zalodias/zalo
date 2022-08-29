@@ -40,19 +40,20 @@ const Home = ({ streams }) => {
             Welcome to my piece of the internet.
           </p>
           <p className="text-lg max-w-prose">
-            I'm mainly focused on exploring the intersection between art, design
-            and technology. Most of what you'll see here are the results of that
-            exploration: whether in the form of thoughts, words or actions.
+            This is my digital home: a place where I grow my ideas & projects.
           </p>
-        </div>
-        <div className="flex gap-4 text-stone-100">
-          <IconSocial icon={<TwitterLogo size={24} />} />
-          <IconSocial icon={<GithubLogo size={24} />} />
-          <IconSocial icon={<LinkedinLogo size={24} />} />
-          <IconSocial icon={<MediumLogo size={24} />} />
-          <IconSocial icon={<FigmaLogo size={24} />} />
-          <IconSocial icon={<DribbbleLogo size={24} />} />
-          <IconSocial icon={<At size={24} />} />
+          <p className="text-lg max-w-prose">
+            Feel free to explore and get to know me better!
+          </p>
+          <div className="flex gap-4 text-stone-100">
+            <IconSocial icon={<TwitterLogo size={24} />} />
+            <IconSocial icon={<GithubLogo size={24} />} />
+            <IconSocial icon={<LinkedinLogo size={24} />} />
+            <IconSocial icon={<MediumLogo size={24} />} />
+            <IconSocial icon={<FigmaLogo size={24} />} />
+            <IconSocial icon={<DribbbleLogo size={24} />} />
+            <IconSocial icon={<At size={24} />} />
+          </div>
         </div>
       </header>
       <section className="flex flex-col gap-4">
