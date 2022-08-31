@@ -11,7 +11,7 @@ import CardGrid from "../components/CardGrid";
 
 const Streams = ({ streams }) => {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 overflow-x-hidden">
       <header className="flex flex-col gap-2">
         <div className="flex items-start gap-2">
           <h1 className="text-2xl text-stone-100 font-semibold">Streams</h1>
