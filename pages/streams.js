@@ -11,7 +11,7 @@ import CardGrid from "../components/CardGrid";
 
 const Streams = ({ streams }) => {
   return (
-    <section className="flex flex-col gap-4">
+    <div className="flex flex-col gap-8">
       <header className="flex flex-col gap-2">
         <div className="flex items-start gap-2">
           <h1 className="text-2xl text-stone-100 font-semibold">Streams</h1>
@@ -37,7 +37,7 @@ const Streams = ({ streams }) => {
           ))
           .reverse()}
       </CardGrid>
-    </section>
+    </div>
   );
 };
 

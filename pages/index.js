@@ -16,7 +16,7 @@ import IconSocial from "../components/IconSocial";
 
 const Home = () => {
   return (
-    <div className="flex flex-col min-h-screen relative overflow-x-hidden gap-16">
+    <div className="flex flex-col gap-8">
       <Head>
         <title>Gonçalo Dias</title>
       </Head>
