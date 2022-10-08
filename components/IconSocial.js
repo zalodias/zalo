@@ -3,7 +3,7 @@ const IconSocial = ({ icon }) => {
     <a
       href=""
       target="_blank"
-      className="p-2 rounded-full transition hover:bg-stone-800"
+      className="p-2 rounded-full transition hover:bg-neutral-800"
     >
       {icon}
     </a>

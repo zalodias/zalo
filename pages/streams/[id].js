@@ -13,13 +13,13 @@ const renderBlock = (block) => {
   switch (type) {
     case "paragraph":
       return (
-        <div className="bg-stone-700 text-stone-100 p-2 rounded-lg max-w-[80%] sm:max-w-sm self-start">
+        <div className="bg-neutral-700 text-neutral-100 p-2 rounded-lg max-w-[80%] sm:max-w-sm self-start">
           {value.rich_text[0].plain_text}
         </div>
       );
     case "quote":
       return (
-        <div className="bg-teal-600 text-stone-100 p-2 rounded-lg max-w-[80%] sm:max-w-sm self-end">
+        <div className="bg-teal-600 text-neutral-100 p-2 rounded-lg max-w-[80%] sm:max-w-sm self-end">
           {value.rich_text[0].plain_text}
         </div>
       );
@@ -43,7 +43,7 @@ export default function Stream({ page, blocks }) {
           </a>
         </Link>
         <div className="flex flex-col gap-1">
-          <h1 className="text-2xl text-stone-100">
+          <h1 className="text-2xl text-neutral-100">
             {page.properties.Name.title[0].text.content}
           </h1>
           <p>{formatDate(page.created_time)}</p>

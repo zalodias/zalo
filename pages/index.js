@@ -27,7 +27,7 @@ const Home = () => {
             alt=""
             className="rounded-full w-20"
           />
-          <h1 className="font-semibold text-2xl text-stone-100">
+          <h1 className="font-semibold text-2xl text-neutral-100">
             Gonçalo Dias
           </h1>
           <p className="text-lg max-w-prose">
@@ -39,7 +39,7 @@ const Home = () => {
           <p className="text-lg max-w-prose">
             Feel free to explore and get to know me better!
           </p>
-          <div className="flex gap-4 text-stone-100">
+          <div className="flex gap-4 text-neutral-100">
             <IconSocial icon={<TwitterLogo size={24} />} />
             <IconSocial icon={<GithubLogo size={24} />} />
             <IconSocial icon={<LinkedinLogo size={24} />} />

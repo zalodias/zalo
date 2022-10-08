@@ -14,7 +14,7 @@ const Streams = ({ streams }) => {
     <div className="flex flex-col gap-8 overflow-x-hidden">
       <header className="flex flex-col gap-2">
         <div className="flex items-start gap-2">
-          <h1 className="text-2xl text-stone-100 font-semibold">Streams</h1>
+          <h1 className="text-2xl text-neutral-100 font-semibold">Streams</h1>
           <BadgeCounter number={streams.length} />
         </div>
         <h4 className="text-lg">
