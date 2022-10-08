@@ -25,10 +25,9 @@ const Streams = ({ streams }) => {
       <CardGrid>
         {streams
           .map((stream) => (
-            <Link href={`/streams/${stream.id}`}>
+            <Link href={`/streams/${stream.id}`} key={stream.id}>
               <a>
                 <Card
-                  key={stream.id}
                   title={stream.properties.Name.title[0].text.content}
                   description={timeAgo(stream.created_time)}
                 />
